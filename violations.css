@@ -1,0 +1,61 @@
+main > div {
+	background-color: #E60012AA;
+	padding: 15px;
+}
+
+li {
+	list-style-position: outside;
+	margin-left: 1.5em;
+}
+
+ul > li {
+	list-style-type: disc;
+}
+
+ul, ol {
+	margin-bottom: 15px;
+}
+
+button, input {
+	padding: 7px;
+}
+
+button, input {
+	background-color: var(--haidilao-white);
+	font-family: inherit;
+	border: 2px solid var(--haidilao-black);
+}
+
+main {
+	width: 100%;
+	justify-content: start;
+	align-items: stretch;
+	flex-flow: column nowrap;
+}
+
+main > * {
+	padding: 0;
+}
+
+.smallbig {
+	font-weight: bold;
+	font-size: 0.8rem;
+}
+
+#violation-ticket > h2 {
+	margin-top: 15px;
+}
+
+#violation-ticket > h2:first-of-type {
+	margin-top: 0;
+}
+
+#violation-info {
+	margin: 5px 0;
+	padding: 5px;
+	border: 3px solid white;
+}
+
+.hidden {
+	display: none;
+}

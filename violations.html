@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width ,initial-scale=1.0, maximum-scale=1.0">
+	<title>Haidilao Hotpot - Arcadia</title>
+	<link href="common.css" rel="stylesheet" type="text/css">
+	<link href="violations.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+		<a href="/"><img src="img/logo_white.webp" alt="Haidilao"></a>
+		<p>400 S Baldwin Ave Suite 2015, Arcadia, CA 91007</p>
+		<p>Tel: <a href="tel:+1 626-445-7232">626-445-7232</a></p>
+	</header>
+	
+	<main>
+		<div>
+			<label for="violation-number">Enter your violation number:</label> <br>
+			<input type="text" name="Violation Number" id="violation-number-input">
+			<button id="btn-go">Go</button>
+		</div>
+
+		<div id="violation-ticket" class="hidden">
+			<h2>Violation #<span id="violation-number-title">68141933572</span></h2>
+			<div id="violation-info">
+				<h3 id="violatee-name">Name: Tammy Vu</h3>
+				<h3>Date of Visit: 2024年7月13日</h3>
+				<h3>Guests: 2</h3>
+				<h3>Check No. 198265916224</h3>
+				<h3>Penalty Amount: $8,144.93</h3>
+			</div>
+
+			<h2>Citations</h2>
+			<ul>
+				<li>Beef Theft in Excess of $1,000 USD</li>
+				<li>Intimidation or Intent to Intimidate Staff</li>
+				<li>Possession of Incendiary Devices within Haidilao Property</li>
+				<li>Terrorism (Unauthorized)</li>
+			</ul>
+			<h2>To Make Amends</h2>
+			<ol>
+				<li>Bring two (2) forms of identification to Haidilao Hotpot - Arcadia (400 S Baldwin Ave Suite 2015, Arcadia, CA 91007)</li>
+				<li>Pay the penalty amount of $8,144.93. Cash or check accepted.</li>
+				<li>Provide written apology to manager to prove your remorse.</li>
+			</ol>
+
+			<p class="smallbig">FAILURE TO RECEIVE YOUR PUNISHMENT WILL RESULT IN A PERMANENT BAN FROM ALL HAIDILAO U.S. LOCATIONS AND REFERRAL TO CHINESE COMMUNIST PARTY WITH A RECOMMENDATION FOR DEADLY FORCE AUTHORIZATION (DFA)</p>
+		</div>
+
+		<div id="unknown-violation" class="hidden">
+			<h2>Unknown Violation</h2>
+			<p>Violation #<span id="uk-violation-num"></span> does not match any unresolved violations.</p>
+		</div>
+
+		<div id="loading-box" class="hidden">
+			<p>Loading...</p>
+		</div>
+	</main>
+	
+	<div class="minitable-credit">
+		<p>Powered by <img src="img/minitable_logo.webp" alt="Minitable"></p>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

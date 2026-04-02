@@ -1,0 +1,159 @@
+:root {
+	--haidilao-red: #E60012;
+	--haidilao-white: #FFFFFF;
+	--haidilao-black: #282828;
+}
+
+@font-face {
+  font-family: Gotham; /* set name */
+  src: url(Gotham-Medium.otf); /* url of the font */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+body, html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	background: url(img/menu_bg.png), #733a3fbe;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	font-family: 'Gotham', Arial, sans-serif;
+	color: var(--haidilao-white);
+}
+
+img {
+	display: block;
+}
+
+header {
+	height: 17.6vh;
+}
+
+header > a {
+	height: 75px;
+	margin: 2vh auto 15px auto;
+}
+
+header > a > img {
+	height: 75px;
+	margin: 2vh auto 15px auto;
+}
+
+header > p {
+	text-align: center;
+}
+
+a {
+	color: var(--haidilao-white);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+main {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 72.5vh;
+}
+
+.menu-item {
+	max-width: 22vw;
+	font-size: 1.3em;
+}
+
+.menu-img {
+	display: block;
+	width: 100%;
+}
+
+.chat-icon {
+	width: 30%;
+	position: relative;
+	top: -75px;
+	left: -12%;
+	z-index: -1;
+}
+
+.menu-item > a {
+	display: block;
+	background-color: var(--haidilao-red);
+	text-align: center;
+	padding: 12px;
+	border: 2px solid var(--haidilao-white);
+	border-radius: 100px;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	box-shadow: 5px 5px 3px 0px #28282855;
+}
+
+.menu-item > a:hover {
+	text-decoration: none;
+}
+
+.minitable-credit {
+	background-color: #E6001277;
+	width: 400px;
+	margin: 0 auto;
+	border-radius: 100%;
+	height: 250px;
+	padding-top: 40px;
+	text-align: center;
+}
+
+.minitable-credit img {
+	display: inline;
+}
+
+@media screen and (max-width: 1000px) {
+	header {
+		font-size: 0.8em;
+	}
+
+	header > img {
+		height: 40px;
+	}
+
+	main {
+		width: 100vw;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		padding: 0;
+	}
+
+	.menu-item {
+		margin: 10px;
+		max-width: 30vw;
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	main {
+		width: 100vw;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		padding: 0;
+	}
+
+	.menu-item {
+		margin: 10px;
+		max-width: 45vw;
+		font-size: 1em;
+	}
+}
