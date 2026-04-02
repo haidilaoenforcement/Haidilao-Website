@@ -24,7 +24,12 @@ button, input {
 	padding: 7px;
 }
 
+header {
+	height: 17.5dvh;
+}
+
 button, input {
+	margin-top: 7px;
 	background-color: var(--haidilao-white);
 	font-family: inherit;
 	border: 2px solid var(--haidilao-black);
@@ -35,10 +40,14 @@ main {
 	justify-content: start;
 	align-items: stretch;
 	flex-flow: column nowrap;
+	padding: 15px;
 }
 
 main > * {
 	padding: 0;
+	border: 3px solid var(--haidilao-white);
+	border-radius: 10px;
+	margin-bottom: 10px;
 }
 
 .smallbig {
@@ -58,6 +67,7 @@ main > * {
 	margin: 5px 0;
 	padding: 5px;
 	border: 3px solid white;
+	border-radius: 7.5px;
 }
 
 .hidden {
