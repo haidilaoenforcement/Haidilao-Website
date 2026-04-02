@@ -3,6 +3,10 @@ main > div {
 	padding: 15px;
 }
 
+html, body {
+	overflow: scroll;
+}
+
 li {
 	list-style-position: outside;
 	margin-left: 1.5em;
